@@ -10,6 +10,11 @@ export default {
 const Template = (args) => <Profile {...args} />;
 
 export const StandardProfile = Template.bind({});
+
 StandardProfile.args = {
   user: {},
+  role: "admin",
+};
+StandardProfile.parameters = {
+  layout: "fullscreen",
 };

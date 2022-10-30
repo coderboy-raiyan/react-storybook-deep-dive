@@ -1,9 +1,18 @@
 import React from "react";
+import "./Profile.css";
 
-const Profile = () => {
+const Profile = ({ role }) => {
   return (
-    <div>
-      <h1>Hi I'm a Profile</h1>
+    <div className="profile">
+      <img
+        className="profile__image"
+        src="https://avatars.githubusercontent.com/u/76396442?v=4"
+        alt=""
+      />
+      <div className="profile__info">
+        <h1>Hi I'm Raiyan {role}</h1>
+        <h3>Professional Software engineer</h3>
+      </div>
     </div>
   );
 };
